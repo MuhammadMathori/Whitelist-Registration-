@@ -23,7 +23,7 @@ body {
 /* Title */
 .header-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 25px;
   margin-bottom: 40px;
@@ -44,6 +44,7 @@ body {
 .rabbit {
   width: 190px;
   height: auto;
+  flex: 0 0 auto;
 }
 
 .rabbit-left {
@@ -73,7 +74,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  /* box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
 }
 
 .time span {
@@ -215,6 +217,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  font-size: large;
 }
 
 button:hover {
@@ -248,6 +251,14 @@ button:hover {
 
 /* media query */
 @media (max-width: 992px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .countdown {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
   .content-row {
     flex-direction: column;
     align-items: center;
@@ -255,6 +266,9 @@ button:hover {
 
   .rewards {
     width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .form-box {
@@ -268,14 +282,20 @@ button:hover {
   }
 
   .rabbit {
-    width: 60px;
+    width: 120px;
+  }
+  .header-section {
+    flex-direction: row;
+    jystify-content: space-between;
+    align-items: center;
+    gap: 10px;
   }
 }
 
 /* HP (max 576px) */
 @media (max-width: 576px) {
   .title {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .countdown {
@@ -284,8 +304,10 @@ button:hover {
   }
 
   .time {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
+    background: #5e00ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
   }
 
   .time span {
@@ -294,11 +316,16 @@ button:hover {
 
   .time p {
     bottom: -20px;
-    font-size: 12px;
+    font-size: 7px;
   }
 
   .colon {
     font-size: 24px;
+  }
+
+  .subtitle {
+    margin: 5px 0 5px;
+    font-size: 20px;
   }
 
   .form-row {
@@ -310,6 +337,13 @@ button:hover {
   }
 
   .rabbit {
-    width: 50px;
+    width: 60px;
+  }
+
+  .header-section {
+    flex-direction: row;
+    jystify-content: space-between;
+    align-items: center;
+    gap: 10px;
   }
 }
