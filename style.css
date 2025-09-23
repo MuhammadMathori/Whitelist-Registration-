@@ -255,7 +255,7 @@ button:hover {
 }
 
 /* media query */
-@media (max-width: 992px) {
+@media (mix-width: 1024px) {
   .title {
     font-size: 20px;
   }
@@ -297,8 +297,8 @@ button:hover {
   }
 }
 
-/* Ipad (max 1024px */
-@media (min-width: 577px) and (max-width: 1024px) {
+/* Ipad (max 992px */
+@media (min-width: 577px) and (max-width: 992px) {
   .container {
     padding: 0 12px;
     max-width: 100vw;
@@ -441,9 +441,8 @@ button:hover {
   }
 
   .countdown {
-    /* flex-wrap: wrap; */
     margin: 10px 0;
-    gap: 6px;
+    gap: 4px;
   }
 
   .time {
