@@ -192,6 +192,11 @@ form {
   flex-direction: column;
   gap: 15px;
 }
+.form-col label {
+  text-align: left;
+  display: block;
+  width: 100%;
+}
 
 input[type="text"],
 input[type="password"] {
