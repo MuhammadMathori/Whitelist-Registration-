@@ -27,10 +27,12 @@ body {
   align-items: center;
   gap: 25px;
   margin-bottom: 40px;
+  flex-wrap: nowrap;
 }
 
 .header-content {
   text-align: center;
+  flex: 1;
 }
 
 .title {
@@ -227,4 +229,71 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 992px) {
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rewards {
+    width: 100%;
+  }
+
+  .form-box {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .header-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .rabbit {
+    width: 60px;
+  }
+}
+
+/* HP (max 576px) */
+@media (max-width: 576px) {
+  .title {
+    font-size: 15px;
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .time {
+    width: 20px;
+    height: 20px;
+  }
+
+  .time span {
+    font-size: 20px;
+  }
+
+  .time p {
+    bottom: -20px;
+    font-size: 12px;
+  }
+
+  .colon {
+    font-size: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-box {
+    padding: 15px;
+  }
+
+  .rabbit {
+    width: 50px;
+  }
 }
