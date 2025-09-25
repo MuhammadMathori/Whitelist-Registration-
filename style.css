@@ -207,11 +207,21 @@ input[type="password"] {
   width: 100%;
 }
 
-.captcha {
+/* .captcha {
   display: flex;
   align-items: center;
   gap: 10px;
-}
+} */
+
+/* .g-recaptcha {
+  transform: scale(0.55);
+  transform-origin: right center;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  height: 45px;
+  align-items: center;
+} */
 
 button {
   background: #007bff;

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "phpninjas/recaptcha": "^0.3.0"
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "packages": [
+        {
+            "name": "phpninjas/recaptcha",
+            "version": "v0.3.0",
+            "version_normalized": "0.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpninjas/ReCaptcha.git",
+                "reference": "b68ab446da6d435487b3dea735f8e1fe11ceefe8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpninjas/ReCaptcha/zipball/b68ab446da6d435487b3dea735f8e1fe11ceefe8",
+                "reference": "b68ab446da6d435487b3dea735f8e1fe11ceefe8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "time": "2014-12-16T09:49:03+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": []
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Google\\": "src/Google",
+                    "Google\\Test\\": "test/Google/Test"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache"
+            ],
+            "authors": [
+                {
+                    "name": "James Turner"
+                }
+            ],
+            "description": "PHP Library to support Google captcha.",
+            "homepage": "https://github.com/phpninjas/ReCaptcha",
+            "keywords": [
+                "google",
+                "recaptcha",
+                "security"
+            ],
+            "support": {
+                "issues": "https://github.com/phpninjas/ReCaptcha/issues",
+                "source": "https://github.com/phpninjas/ReCaptcha/tree/master"
+            },
+            "install-path": "../phpninjas/recaptcha"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
