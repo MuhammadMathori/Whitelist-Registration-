@@ -19,7 +19,7 @@
 
         <div class="header-content">
           <!-- Title -->
-          <h1 class="title">Whitelist Registration Opens - Closes On:</h1>
+          <h1 class="title">Whitelist Private Sale Opens - Closes On:</h1>
 
           <!-- Countdown -->
           <div class="countdown">
@@ -48,75 +48,50 @@
         <img src="img/rabbitright.png" alt="Rabbit Right" class="rabbit rabbit-right" />
       </div>
 
-      <h1 class="subtitle">Private Round</h1>
-
       <!-- Rewards + Form Wrapper -->
       <div class="content-row">
-        <!-- Rewards Section -->
-        <div class="rewards">
-          <h3 class="rewards-title">Whitelist Buyer Rewards:</h3>
-          <div class="box">
-            <ul>
-              <li>✅ Private round price (lower than pre-sale).</li>
-              <li>✅ Exclusive dev channel: Web3 Games integration guide.</li>
-              <li>✅ Exclusive dev channel: Learn online multiplayer game.</li>
-              <li>✅ +5% token bonus (min. $500 purchase).</li>
-              <li>✅ Exclusive NFT rewards (min. $300 purchase).</li>
-              <li>✅ Exclusive Discord & Telegram tags.</li>
-              <li>✅ Priority access 24 hours before non-whitelisted buyers.</li>
-            </ul>
-          </div>
-
-          <h3 class="rewards-title">Non-Whitelist Buyer Rewards:</h3>
-          <div class="box">
-            <ul>
-              <li>✅ Private round price (lower than pre-sale).</li>
-              <li>✅ Exclusive dev channel: Web3 Games integration guide.</li>
-              <li>✅ Exclusive dev channel: Learn online multiplayer game.</li>
-              <li>❌ No token bonuses.</li>
-              <li>❌ No exclusive NFTs.</li>
-              <li>❌ No exclusive Discord & Telegram tags.</li>
-              <li>❌ No 24 hours early access (after whitelist period ends).</li>
-            </ul>
+        <!-- progress section -->
+        <div class="progress">
+          <h2 class="progress-title">Private Sale In Progress</h2>
+          <div class="progress-wrap">
+            <div class="progress-info">
+              <span>Sale Progress</span>
+              <span class="progress-percent">50.0 Complete</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 50%"></div>
+            </div>
+            <div class="meta">
+              <span>Total Raised: $2,000,000.5</span>
+              <span>Tokens Left: 12,000,000</span>
+            </div>
           </div>
         </div>
 
         <!-- Form Section -->
         <div class="form-box">
           <img src="img/QuipRabbit.png" alt="quitrabbit" class="quitrabbit" />
-          <form action="connection.php" method="POST">
-            <h3>WHITELIST REGISTRATION FORM!</h3>
+          <h2 class="login-title">WHITELIST LOGIN FORM!</h2>
+          <form action="login.php" method="POST">
             <div class="form-row">
               <div class="form-col">
                 <label for="username">Username</label>
                 <input type="text" name="username" placeholder="Enter your username..." required />
-                <label for="telegram">Telegram</label>
-                <input type="text" name="telegram" placeholder="@yourtelegram" required />
-                <label for="wallet"> Solana wallet</label>
-                <input type="text" name="wallet" placeholder="Enter your Solana wallet address" required />
-              </div>
-              <div class="form-col">
                 <label for="password">Password</label>
                 <input type="password" name="password" placeholder="Enter your password..." required />
-                <label for="discord">Discord</label>
-                <input type="text" name="discord" placeholder="your discord username" required />
-                <!-- <div class="captcha">
-                  <input type="checkbox" id="captcha" />
-                  <label for="captcha">I'm not a robot</label>
-                </div> -->
               </div>
             </div>
             <div class="g-recaptcha" data-sitekey="6LclXtQrAAAAAONJBPnNNVaO87x7XA5cz8getl58"></div>
 
-            <button type="submit">SUBMIT</button>
+            <button type="submit">LOGIN</button>
           </form>
         </div>
       </div>
     </div>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- alert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <!-- <script>
       const urlParams = new URLSearchParams(window.location.search);
       if (urlParams.get("status") === "success") {
         Swal.fire({
@@ -133,6 +108,6 @@
           confirmButtonColor: "#d33",
         });
       }
-    </script>
+    </script> -->
   </body>
 </html>

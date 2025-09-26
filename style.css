@@ -41,13 +41,16 @@ body {
 }
 
 .rabbit {
-  width: 190px;
+  width: 100px;
   height: auto;
   flex: 0 0 auto;
 }
+.rabbit-right {
+  margin-right: 100px;
+}
 
 .rabbit-left {
-  transform: scaleX(-1);
+  margin-left: 100px;
 }
 
 .subtitle {
@@ -60,7 +63,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   margin: 20px 0;
 }
 
@@ -128,7 +131,7 @@ body {
   text-align: left;
 }
 
-.box h3 {
+.box h1 {
   margin-bottom: 15px;
   color: #0ff;
 }
@@ -150,6 +153,13 @@ form {
   flex-direction: column;
   gap: 15px;
   align-items: center;
+}
+
+.quitrabbit {
+  display: block;
+  margin: -60px auto 12px auto;
+  width: 100px;
+  height: auto;
 }
 
 /* .form-box {
@@ -262,6 +272,67 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.login-title {
+  color: #7fff00;
+  margin-bottom: 20px;
+}
+
+/* progress */
+.progress {
+  margin: 50px;
+  height: 180px;
+  width: 430px;
+  color: #fff;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: 2px solid rgba(255, 255, 255, 0.03);
+  background: linear-gradient(135deg, #ffffff80 0%, #5e00ff 100%);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.progress-title {
+  font-size: 28px;
+  margin: 4px 0 16px 0;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.5);
+  color: #ffe96b;
+  text-align: center;
+}
+
+.progress-wrap {
+  margin-top: 10px;
+}
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 8px;
+}
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffd26b, #ff6bd1 50%);
+  border-radius: 20px;
+  transition: width 0.6s ease;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* media query */
@@ -502,10 +573,25 @@ button:hover {
     width: 60px;
   }
 
+  .rabbit-left {
+    margin-left: 50px;
+  }
+
+  .rabbit-right {
+    margin-right: 50px;
+  }
+
   .header-section {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+  }
+
+  .progress {
+    margin: 20px auto;
+    height: 180px;
+    width: 90vw;
+    max-width: 400px;
   }
 }
