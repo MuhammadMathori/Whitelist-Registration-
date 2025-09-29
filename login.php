@@ -33,6 +33,9 @@ if ($stmt->num_rows > 0) {
         header("Location: login.html?login=fail");
         exit();
     }
+} else {
+    header("Location: login.html?login=fail");
+    exit();
 }
 
 $stmt->close();
