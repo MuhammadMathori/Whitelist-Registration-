@@ -570,22 +570,24 @@ button:hover {
   }
 
   .rabbit {
-    width: 60px;
+    width: 50px;
   }
 
   .rabbit-left {
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
   .rabbit-right {
-    margin-right: 50px;
+    margin-right: 20px;
   }
 
   .header-section {
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .progress {
@@ -593,5 +595,22 @@ button:hover {
     height: 180px;
     width: 90vw;
     max-width: 400px;
+  }
+
+  @media (max-width: 360px) {
+    .title {
+      font-size: 9px;
+    }
+
+    .rabbit {
+      width: 30px;
+    }
+
+    .rabbit-left {
+      margin-left: 10px;
+    }
+    .rabbit-right {
+      margin-right: 10px;
+    }
   }
 }

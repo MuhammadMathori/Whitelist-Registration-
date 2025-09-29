@@ -90,24 +90,24 @@
     </div>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- alert -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
-    <!-- <script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
       const urlParams = new URLSearchParams(window.location.search);
-      if (urlParams.get("status") === "success") {
-        Swal.fire({
-          icon: "success",
-          title: "Registration Successfully!",
-          text: "Congratulations, you have been whitelisted.",
-          confirmButtonColor: "#3085d6",
-        });
-      } else if (urlParams.get("status") === "fail") {
+      if (urlParams.get("login") === "fail") {
         Swal.fire({
           icon: "error",
-          title: "Registration Failed!",
-          text: "Your registration failed",
-          confirmButtonColor: "#d33",
+          title: "Login Failed!",
+          text: "Invalid username or password",
+          confirmButtonColor: "#3085d6",
         });
+        // } else if (urlParams.get("status") === "fail") {
+        //   Swal.fire({
+        //     icon: "error",
+        //     title: "Registration Failed!",
+        //     text: "Your registration failed",
+        //     confirmButtonColor: "#d33",
+        //   });
       }
-    </script> -->
+    </script>
   </body>
 </html>
