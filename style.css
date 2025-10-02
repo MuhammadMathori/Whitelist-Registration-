@@ -162,15 +162,6 @@ form {
   height: auto;
 }
 
-/* .form-box {
-  margin: 70px auto;
-  max-width: 600px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-} */
-
 .form-box {
   margin: 50px auto;
   max-width: 600px;
@@ -234,19 +225,20 @@ input[type="password"] {
 } */
 
 button {
-  background: #007bff;
-  border: none;
-  padding: 10px;
-  border-radius: 8px;
-  color: #fff;
+  background: linear-gradient(135deg, #ffffff80 0%, blue 100%);
+  backdrop-filter: blur(20px);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
+  border: none;
   transition: 0.3s;
-  font-size: large;
 }
 
 button:hover {
-  background: purple;
+  transform: scale(1.05);
 }
 
 .content-row {
