@@ -36,7 +36,7 @@ body {
   margin-top: 60px;
   margin-bottom: 60px;
   bottom: -5px;
-  left: 370px;
+  left: 350px;
   width: 50%;
   background: linear-gradient(135deg, #ffffff80 0%, #5e00ff 100%);
   backdrop-filter: blur(20px);
@@ -84,21 +84,20 @@ body {
 }
 
 .rabbit,
-.balloon,
-.car,
-.cookie,
-.carrot {
+.balloon {
   position: absolute;
 }
 
 .leftlamp {
   position: absolute;
+  width: 20%;
   top: 25%;
   left: 0;
   transform: translateY(-50%);
 }
 .rightlamp {
   position: absolute;
+  width: 20%;
   top: 25%;
   right: 0;
   transform: translateY(-50%);
@@ -110,7 +109,7 @@ body {
   width: 90px;
 }
 .rabbit.right {
-  right: 130px;
+  right: 100px;
   margin: -90px auto 12px auto;
   width: 150px;
 }
@@ -128,19 +127,12 @@ body {
   top: 0;
   left: 50%;
   margin: -35px auto 12px auto;
-  /* bottom: -120px; */
   width: 100px;
-  /* display: block; */
 }
 .balloon {
-  left: 25%;
+  left: 23%;
   top: 10px;
   width: 100px;
-}
-.car {
-  right: 150px;
-  bottom: 50px;
-  width: 200px;
 }
 
 .bottombg {
@@ -152,6 +144,13 @@ body {
 }
 
 /* media query */
+/* LAPTOP */
+@media (min-width: 993px) and (max-width: 1280px) {
+  .bottombgmobile {
+    display: none;
+  }
+}
+
 /* IPAD */
 @media (min-width: 577px) and (max-width: 992px) {
   .campaign-box {
@@ -201,19 +200,18 @@ body {
   }
 }
 
-/* === Tampilan HP (Portrait) === */
+/*  HP (*/
 @media (max-width: 576px) {
   body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px;
   }
 
   .campaign-box {
     width: 90%;
     left: 0;
-    margin: 65px auto;
+    margin: 120px auto;
     padding: 55px 20px;
   }
 
@@ -258,8 +256,8 @@ body {
   }
 
   .balloon {
-    top: 60px;
-    left: 20px;
+    top: 90px;
+    left: -10px;
     width: 70px;
   }
 
@@ -269,30 +267,24 @@ body {
 
   .bottombgmobile {
     position: absolute;
-    height: 50%;
+    height: 35%;
     width: 100%;
     bottom: 320px;
-    bottom: -85px;
+    bottom: -10px;
   }
 
   .leftlamp {
     position: absolute;
     width: 30%;
-    top: 7%;
+    top: 5%;
     left: -1px;
     transform: translateY(-50%);
   }
   .rightlamp {
     position: absolute;
     width: 30%;
-    top: 7%;
+    top: 5%;
     right: -1px;
     transform: translateY(-50%);
   }
-
-  /* .leftlamp,
-  .rightlamp {
-    width: 50%;
-    margin-top: 0px;
-  } */
 }
